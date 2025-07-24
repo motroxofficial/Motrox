@@ -57,11 +57,12 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await query.edit_message_text(
             "🔍 What We Do?"
 
-Motrox is a smart investment platform. "
-            "Deposit USDT (TRC20), and we generate 10-15% profit daily. "
-            "Your funds are managed through automated systems and the profit is updated every 2 hours (0.8%).",
-            parse_mode='Markdown'
-        )
+await query.edit_message_text(
+    "💼 *Motrox* is a smart investment platform.\n\n"
+    "💳 *Deposit USDT (TRC20)* and earn *10–15% profit daily*.\n\n"
+    "⏱ Your funds are managed by automated systems, and profit is updated every 2 hours (0.8%).",
+    parse_mode='Markdown'
+)
 
 async def text_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
