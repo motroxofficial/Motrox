@@ -35,8 +35,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await query.answer()
     if query.data == 'deposit':
         users[user_id]['start_time'] = datetime.now()
-        await query.edit_message_text(f"Send your USDT TRC20 to:
-`{USDT_ADDRESS}`", parse_mode='Markdown')
+        await query.edit_message_text(f"Send your USDT TRC20 to:\n`TTP45gJWhuo6Axe8jYqc1hBc2f8zMyS5Ki`", parse_mode='Markdown')
     elif query.data == 'progress':
         if users[user_id]['start_time']:
             hours = (datetime.now() - users[user_id]['start_time']).total_seconds() // 7200
