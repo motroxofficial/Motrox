@@ -71,7 +71,7 @@ if __name__ == '__main__':
     import asyncio
 
     async def main():
-        app = ApplicationBuilder().token(os.environ['BOT_TOKEN']).build()
+        app = ApplicationBuilder().token(os.environ['7509938357:AAEXVLbk0cdud8qgX8R-O50dYFepNrVz6oU']).build()
 
         app.add_handler(CommandHandler("start", start))
         app.add_handler(CallbackQueryHandler(button_handler))
