@@ -55,7 +55,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         context.user_data['awaiting_withdraw_address'] = True
     elif query.data == 'info':
         await query.edit_message_text(
-            "📊 *What We Do?*
+            "🔍 What We Do?"
 
 Motrox is a smart investment platform. "
             "Deposit USDT (TRC20), and we generate 10-15% profit daily. "
