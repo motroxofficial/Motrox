@@ -22,7 +22,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
     await update.message.reply_text(
-        f"🤖 Welcome to *Motrox Bot*!
+        f"👋 Welcome to *Motrox Bot!*"
 
 Invest USDT (TRC20) and earn 10%-15% daily passive income. "
         "We calculate profits every 2 hours (0.8%).",
